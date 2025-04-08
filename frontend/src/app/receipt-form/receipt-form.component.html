@@ -1,0 +1,55 @@
+<h2>Submit Receipt for Reimbursement</h2>
+
+<form
+  (ngSubmit)="onSubmit()"
+  #receiptForm="ngForm"
+  enctype="multipart/form-data"
+>
+  <label for="employeeEmail">University Email:</label><br />
+  <input
+    type="email"
+    id="employeeEmail"
+    name="employeeEmail"
+    [(ngModel)]="formData.employeeEmail"
+    required
+  /><br /><br />
+
+  <label for="date">Date of Purchase:</label><br />
+  <input
+    type="date"
+    id="date"
+    name="date"
+    [(ngModel)]="formData.date"
+    required
+  /><br /><br />
+
+  <label for="amount">Amount:</label><br />
+  <input
+    type="number"
+    id="amount"
+    name="amount"
+    [(ngModel)]="formData.amount"
+    required
+  /><br /><br />
+
+  <label for="description">Description:</label><br />
+  <textarea
+    id="description"
+    name="description"
+    [(ngModel)]="formData.description"
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="file">Upload Receipt:</label><br />
+  <input
+    type="file"
+    id="file"
+    (change)="onFileChange($event)"
+    required
+  /><br /><br />
+
+  <button type="submit">Submit Receipt</button>
+</form>
+
+<p *ngIf="responseMessage">{{ responseMessage }}</p>
