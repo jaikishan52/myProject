@@ -167,3 +167,4 @@
 /Users/jaikishantimmapatruni/Desktop/myProject/Backend/obj/Debug/net8.0/Backend.pdb
 /Users/jaikishantimmapatruni/Desktop/myProject/Backend/obj/Debug/net8.0/Backend.genruntimeconfig.cache
 /Users/jaikishantimmapatruni/Desktop/myProject/Backend/obj/Debug/net8.0/ref/Backend.dll
+/Users/jaikishantimmapatruni/Desktop/myProject/Backend/obj/Debug/net8.0/Backend.sourcelink.json
